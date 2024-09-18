@@ -1,4 +1,6 @@
-[![NuGet Version and Downloads count](https://buildstats.info/nuget/TJC.Priority)](https://www.nuget.org/packages/TJC.Priority)
+![GitHub Tag](https://img.shields.io/github/v/tag/TJC-Tools/TJC.Priority) ![NuGet Version](https://img.shields.io/nuget/v/TJC.Priority)
+
+![NuGet Downloads](https://img.shields.io/nuget/dt/TJC.Priority) ![Size](https://img.shields.io/github/repo-size/TJC-Tools/TJC.Priority) ![License](https://img.shields.io/github/license/TJC-Tools/TJC.Priority.svg)
 
 The [Priority](TJC.Priority/Priority.cs) class is used to create prioritization of items in a list.
 
