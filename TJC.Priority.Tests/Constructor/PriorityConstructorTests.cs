@@ -1,5 +1,3 @@
-
-
 namespace TJC.Priority.Tests;
 
 [TestClass]

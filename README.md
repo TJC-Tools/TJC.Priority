@@ -27,6 +27,6 @@ priority1.Remove(); // 3, 2
 ```csharp
 void List<T> GetPriorities<T>(List<T> items)
 {
-	return items.OrderBy(x => x.Priority).ToList();
+ return items.OrderBy(x => x.Priority).ToList();
 }
 ```

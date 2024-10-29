@@ -121,26 +121,22 @@ public class Priority : IComparable, IComparable<Priority>, IEquatable<Priority>
         {
             null => 1,
             Priority otherPriority => CompareTo(otherPriority),
-            _ => throw new ArgumentException("Object is not a Priority")
+            _ => throw new ArgumentException("Object is not a Priority"),
         };
     }
 
-    public int CompareTo(Priority? other) =>
-        other is null ? 1 : Value.CompareTo(other.Value);
+    public int CompareTo(Priority? other) => other is null ? 1 : Value.CompareTo(other.Value);
 
     #endregion
 
     #region IEquatable<Priority>
 
     public override bool Equals(object? obj) =>
-        obj is Priority otherPriority
-     && Equals(otherPriority);
+        obj is Priority otherPriority && Equals(otherPriority);
 
-    public bool Equals(Priority? other) =>
-        Value.Equals(other?.Value);
+    public bool Equals(Priority? other) => Value.Equals(other?.Value);
 
-    public override int GetHashCode() =>
-        HashCode.Combine(_id);
+    public override int GetHashCode() => HashCode.Combine(_id);
 
     #endregion
 
@@ -187,8 +183,7 @@ public class Priority : IComparable, IComparable<Priority>, IEquatable<Priority>
         return left.CompareTo(right) == 0;
     }
 
-    public static bool operator !=(Priority left, Priority right) =>
-        !(left == right);
+    public static bool operator !=(Priority left, Priority right) => !(left == right);
 
     #endregion
 }
