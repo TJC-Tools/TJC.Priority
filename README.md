@@ -7,3 +7,6 @@
 [![License](https://img.shields.io/github/license/TJC-Tools/TJC.Priority.svg)](LICENSE)
 
 [![codecov](https://codecov.io/gh/TJC-Tools/TJC.Priority/graph/badge.svg?token=O4IL178PR6)](https://codecov.io/gh/TJC-Tools/TJC.Priority)
+
+## Documentation
+- [Changelog](CHANGELOG.md)
