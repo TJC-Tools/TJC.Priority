@@ -1,9 +1,9 @@
 namespace TJC.Priority.Tests;
 
-[TestClass]
+
 public class PriorityConstructorTests
 {
-    [TestMethod]
+    [Fact]
     public void ConstructPriority_ValueDefaultIsZero()
     {
         // Arrange
@@ -17,8 +17,8 @@ public class PriorityConstructorTests
         Trace.WriteLine($"{nameof(priority3)}: {Priority.GetPrioritiesToString(priority3)}");
 
         // Assert
-        Assert.AreEqual(0, priority1.Value);
-        Assert.AreEqual(0, priority2.Value);
-        Assert.AreEqual(0, priority3.Value);
+        Assert.Equal(0, priority1.Value);
+        Assert.Equal(0, priority2.Value);
+        Assert.Equal(0, priority3.Value);
     }
 }

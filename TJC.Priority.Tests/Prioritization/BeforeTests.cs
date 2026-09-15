@@ -1,9 +1,9 @@
-﻿namespace TJC.Priority.Tests.Prioritization;
+namespace TJC.Priority.Tests.Prioritization;
 
-[TestClass]
+
 public class BeforeTests
 {
-    [TestMethod]
+    [Fact]
     public void Before_ReordersPriorities()
     {
         // Arrange
@@ -21,8 +21,8 @@ public class BeforeTests
         Trace.WriteLine($"{nameof(priority3)}: {Priority.GetPrioritiesToString(priority3)}");
 
         // Assert
-        Assert.AreEqual(1, priority3.Value);
-        Assert.AreEqual(2, priority1.Value);
-        Assert.AreEqual(3, priority2.Value);
+        Assert.Equal(1, priority3.Value);
+        Assert.Equal(2, priority1.Value);
+        Assert.Equal(3, priority2.Value);
     }
 }

@@ -1,9 +1,9 @@
-﻿namespace TJC.Priority.Tests.Prioritization;
+namespace TJC.Priority.Tests.Prioritization;
 
-[TestClass]
+
 public class RemoveTests
 {
-    [TestMethod]
+    [Fact]
     public void Remove_ReordersPriorities()
     {
         // Arrange
@@ -23,7 +23,7 @@ public class RemoveTests
 
         // Assert
         // After removal, priorities should be reordered
-        Assert.AreEqual(1, priority3.Value);
-        Assert.AreEqual(2, priority1.Value);
+        Assert.Equal(1, priority3.Value);
+        Assert.Equal(2, priority1.Value);
     }
 }

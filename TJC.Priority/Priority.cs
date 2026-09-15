@@ -1,4 +1,4 @@
-﻿namespace TJC.Priority;
+namespace TJC.Priority;
 
 public class Priority : IComparable, IComparable<Priority>, IEquatable<Priority>
 {

@@ -6,6 +6,7 @@
 ![Size](https://img.shields.io/github/repo-size/TJC-Tools/TJC.Priority)
 [![License](https://img.shields.io/github/license/TJC-Tools/TJC.Priority.svg)](LICENSE)
 
+[![tests](https://github.com/TJC-Tools/TJC.Priority/actions/workflows/ct-matrix.yml/badge.svg)](https://github.com/TJC-Tools/TJC.Priority/actions/workflows/ct-matrix.yml)
 [![codecov](https://codecov.io/gh/TJC-Tools/TJC.Priority/graph/badge.svg?token=O4IL178PR6)](https://codecov.io/gh/TJC-Tools/TJC.Priority)
 
 ## Documentation

@@ -1,49 +1,49 @@
 namespace TJC.Priority.Tests;
 
-[TestClass]
+
 public class ComparisonTests
 {
-    [TestMethod]
+    [Fact]
     public void CompareTo_HandlesNullPriorityAndUnsupportedObject()
     {
         var priority = new Priority(2);
 
-        Assert.AreEqual(1, priority.CompareTo((Priority?)null));
-        Assert.AreEqual(1, priority.CompareTo((object?)null));
-        Assert.ThrowsException<ArgumentException>(() => priority.CompareTo("priority"));
+        Assert.Equal(1, priority.CompareTo((Priority?)null));
+        Assert.Equal(1, priority.CompareTo((object?)null));
+        Assert.Throws<ArgumentException>(() => priority.CompareTo("priority"));
     }
 
-    [TestMethod]
+    [Fact]
     public void EqualityAndComparisonOperators_ComparePriorityValues()
     {
         var first = new Priority(1);
         var equal = new Priority(1);
         var later = new Priority(2);
 
-        Assert.IsTrue(first == equal);
-        Assert.IsFalse(first != equal);
-        Assert.IsTrue(first < later);
-        Assert.IsTrue(later > first);
-        Assert.IsTrue(first <= equal);
-        Assert.IsTrue(later >= equal);
-        Assert.IsFalse(first.Equals("priority"));
-        Assert.IsFalse(((Priority?)null) == first);
-        Assert.IsTrue(((Priority?)null) == null);
+        Assert.True(first == equal);
+        Assert.False(first != equal);
+        Assert.True(first < later);
+        Assert.True(later > first);
+        Assert.True(first <= equal);
+        Assert.True(later >= equal);
+        Assert.False(first.Equals("priority"));
+        Assert.False(((Priority?)null) == first);
+        Assert.True(((Priority?)null) == null);
     }
 
-    [TestMethod]
+    [Fact]
     public void ComparisonOperators_NullOperand_ThrowArgumentNullException()
     {
         var priority = new Priority();
         Priority? nullPriority = null;
 
-        Assert.ThrowsException<ArgumentNullException>(() => _ = nullPriority! < priority);
-        Assert.ThrowsException<ArgumentNullException>(() => _ = priority > nullPriority!);
-        Assert.ThrowsException<ArgumentNullException>(() => _ = nullPriority! <= priority);
-        Assert.ThrowsException<ArgumentNullException>(() => _ = priority >= nullPriority!);
+        Assert.Throws<ArgumentNullException>(() => _ = nullPriority! < priority);
+        Assert.Throws<ArgumentNullException>(() => _ = priority > nullPriority!);
+        Assert.Throws<ArgumentNullException>(() => _ = nullPriority! <= priority);
+        Assert.Throws<ArgumentNullException>(() => _ = priority >= nullPriority!);
     }
 
-    [TestMethod]
+    [Fact]
     public void Reset_SetsValuesToZero()
     {
         var first = new Priority(3);
@@ -51,7 +51,7 @@ public class ComparisonTests
 
         Priority.Reset([first, second]);
 
-        Assert.AreEqual(0, first.Value);
-        Assert.AreEqual(0, second.Value);
+        Assert.Equal(0, first.Value);
+        Assert.Equal(0, second.Value);
     }
 }
