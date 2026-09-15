@@ -1,6 +1,5 @@
 namespace TJC.Priority.Tests;
 
-
 public class PriorityConstructorTests
 {
     [Fact]
