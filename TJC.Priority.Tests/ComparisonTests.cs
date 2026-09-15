@@ -1,6 +1,5 @@
 namespace TJC.Priority.Tests;
 
-
 public class ComparisonTests
 {
     [Fact]
@@ -28,7 +27,7 @@ public class ComparisonTests
         Assert.True(later >= equal);
         Assert.False(first.Equals("priority"));
         Assert.False(((Priority?)null) == first);
-        Assert.True(((Priority?)null) == null);
+        Assert.Null(((Priority?)null));
     }
 
     [Fact]
