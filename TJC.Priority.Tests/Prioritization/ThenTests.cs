@@ -1,6 +1,5 @@
 namespace TJC.Priority.Tests.Prioritization;
 
-
 public class ThenTests
 {
     [Fact]
